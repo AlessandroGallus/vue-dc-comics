@@ -53,7 +53,35 @@
       </div>
     </div>
     <div class="socials">
-
+      <div class="container-50">
+        <a href="\">
+          <div class="signup">
+            Sign-up now!
+          </div>
+        </a>
+      </div>
+      <div class="container-50">
+        <div class="container-40">
+          <a href="\">
+            <p>Follow Us</p>
+          </a>
+          <a href="\">
+            <img src="../assets/img/footer-facebook.png" alt="">
+          </a>
+          <a href="\">
+            <img src="../assets/img/footer-twitter.png" alt="">
+          </a>
+          <a href="\">
+            <img src="../assets/img/footer-youtube.png" alt="">
+          </a>
+          <a href="\">
+            <img src="../assets/img/footer-pinterest.png" alt="">
+          </a>
+          <a href="\">
+            <img src="../assets/img/footer-periscope.png" alt="">
+          </a>
+        </div>
+      </div>
     </div>
   </footer>
 </template>
@@ -113,8 +141,38 @@ export default {
     }
   }
   .socials{
+    color:white;
     width:100%;
     height:90px;
     background-color:#303030;
+    display:flex;
+    .container-50{
+      width:50%;
+      height: 100%;
+      display:flex;
+      justify-content: space-around;
+      align-items: center;
+      a{
+        color:white;
+        text-decoration: none;
+      }
+      .signup{
+        text-transform: uppercase;
+        padding: 15px;
+        border:2px solid #0282F9;
+      }
+      .container-40{
+        width:40%;
+        margin:0 auto;
+        display:flex;
+        justify-content: space-between;
+        p{
+          line-height: 40px;
+          text-transform: uppercase;
+          color: #0282F9;
+          font-weight: bold;
+        }
+      }
+    }
   }
 </style>
